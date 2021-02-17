@@ -1,6 +1,7 @@
-const host = process.env.HOST || 'localhost';
-const port = process.env.PORT || 3000;
-const baseURL = process.env.NODE_ENV === 'production' ? 'https://aid-world-builder.ey.r.appspot.com/api' : `http://${host}:${port}/api`;
+const host      = process.env.HOST || 'localhost';
+const webURL    = process.env.WEB_API_URL;
+const port      = process.env.PORT || 3000;
+const baseURL   = process.env.NODE_ENV === 'production' ? `${webURL}/api` : `http://${host}:${port}/api`;
 
 export default {
     srcDir: 'client/',
