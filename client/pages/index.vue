@@ -25,7 +25,7 @@
     // This should be in Vuex as an action
     async function fetchPublicWorlds($axios) {
         let response;
-
+        console.log($axios.config.baseURL);
         try {
             response = await $axios.get('/public-worlds/');
         } catch (e) { console.error('Error fetching public worlds', e); }
