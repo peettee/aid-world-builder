@@ -1,7 +1,7 @@
 const host      = process.env.HOST || 'localhost';
 const webURL    = process.env.WEB_API_URL;
 const port      = process.env.PORT || 3000;
-const baseURL   = `${webURL}/api`;
+const baseURL   = `/api`;
 
 export default {
     srcDir: 'client/',
