@@ -5,6 +5,7 @@ let connection = null;
 // Database Connection for Production
 if (global.process.env.NODE_ENV === 'production') {
     let config = {
+        host: process.env.DB_HOST,
         user: process.env.GCLOUD_SQL_USER,
         database: process.env.GCLOUD_SQL_DATABASE,
         password: process.env.GCLOUD_SQL_PASSWORD,
